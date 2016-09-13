@@ -1,0 +1,19 @@
+{
+  "name": "angular-dom-lookup",
+  "version": "1.0.0",
+  "description": "A service for DOM lookup with promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebelok/angular-dom-lookup.git"
+  },
+  "author": "Andrew Vdovichenko <vdovichencko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rebelok/angular-dom-lookup/issues"
+  },
+  "homepage": "https://github.com/rebelok/angular-dom-lookup#readme"
+}
