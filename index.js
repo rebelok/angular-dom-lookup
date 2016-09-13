@@ -1,20 +1,24 @@
-(function () {
+(function (angular) {
   'use strict';
-  
+
   angular.module('rbl.dom', []);
 
   angular
     .module('rbl.dom')
-    .factory('dom', domService);
+    .factory('dom', ['$q', '$window', '$interval', domService]);
 
   function domService($q, $window, $interval) {
     return {
       querySelector: querySelector
     };
 
-    function querySelector(selector, timeout) {
+    function querySelector(selector, options) {
+      options          = options || {};
+      var timeout      = options.timeout || 0;
+      var lookUpPeriod = options.interval || 50;
+
       var defer          = $q.defer();
-      var lookUpInterval = $interval(lookUp, 50);
+      var lookUpInterval = $interval(lookUp, lookUpPeriod);
 
       defer.promise.cancel = cancel;
 
@@ -40,4 +44,4 @@
       }
     }
   }
-})();
+})(angular);
