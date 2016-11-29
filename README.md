@@ -7,6 +7,10 @@ A service for DOM lookup with promises
 ```bash
 npm install angular-dom-lookup
 ```
+###Bower
+```bash
+bower install angular-dom-lookup
+```
 ##Usage
 ###Require `rbl.dom` and inject the `dom` service
 ```
