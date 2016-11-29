@@ -1,0 +1,22 @@
+{
+  "name": "angular-dom-lookup",
+  "description": "A service for DOM lookup with promises",
+  "main": "index.js",
+  "authors": [
+    "Andrew Vdovichenko <vdovichencko@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dom",
+    "lookup",
+    "service"
+  ],
+  "homepage": "https://github.com/rebelok/angular-dom-lookup",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
